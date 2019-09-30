@@ -14,7 +14,7 @@ a {
 	text-decoration: none; 
 }
 
-ul, li {
+.box-menu, .item-menu {
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
@@ -23,26 +23,26 @@ ul, li {
 	color: #727272;
 }
 
-ul {
-	margin-top: 0;
-}
-
-li {
+.item-menu {
 	margin-left: 35px;
 	margin-top: 24px;
 }
 
-li:hover {
+.item-menu:hover {
 	color: #000;
-	text-decoration: underline;
-	cursor: pointer;
+	border-bottom: 1px solid #000;
+	padding-bottom: 5px;
+	
 }
 
- nav {
-    background-color: #e5e6e6;
+.box-menu {
     width: 100%;
     max-width: 2000px;
     height: 60px;
+    margin-top: 0;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+   
 }
 
 .dj {
@@ -58,13 +58,49 @@ li:hover {
 	margin-top: 50px;
 }
 
-h1 {
+ .heading {
 	font-size: 50px;
-	font-weight: 400;
-	color: #5b848f;
+	font-weight: 200;
 	text-transform: uppercase;
-	text-decoration: line-through;
-	text-align: center;
+	position: relative;
+}
+
+.heading:before {
+	content: '';
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    width: 500px;
+    height: 2px;
+    background-color: #000;
+}
+
+.heading3:before {
+    right: 30%;
+    width: 670px;
+    height: 2px;
+}
+
+.heading4:before {
+	width: 530px;
+	right: 0;
+	left: 0;
+}
+
+.heading5:before {
+	width: 280px;
+	right: 42%; 
+}
+
+.heading6:before {
+    width: 500px;
+    left: 0;
+}
+
+.heading1 {
+	color: #98684c;
+    text-align: center;
+    letter-spacing: 2px;
 }
 
 p {
@@ -104,8 +140,8 @@ p {
 }
 
 .hr-line, .hr-line2 {
-	border-bottom: 1px solid #000;
-	padding-top: 12px;
+	border-top: 1px solid #000;
+    margin: 12px 0;
 }
 
 .hr-line {
@@ -113,7 +149,7 @@ p {
 }
 
 .hr-line2 {
-	width: 380px;
+	width: 350px;
 }
 
 .music-album {
@@ -184,6 +220,12 @@ p {
 	margin-top: 100px;
 }
 
+.heading2 {
+	color: #62a2ad;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
 .bg {
 	background: url(img/bg.png);
 	height: 700px;
@@ -212,26 +254,38 @@ p {
 }
 
 .box-content {
-	padding-top: 270px;
+	padding-top: 300px;
 	width: 100%;
 	max-width: 650px;
 }
 
 .btn {
 	border: 2px solid #b3b5b5;
-    text-transform: uppercase;
     color: #000;
-    padding: 20px 60px 20px 50px;
+    font-weight: bold;
+    padding: 25px 68px 20px 53px;
 }
 
 .btn-item {
 	padding-top: 40px;
+	position: relative;
 }
  
+.iconbtn {
+    position: absolute;
+    left: 24%;
+    top: 68%;
+}
+
 .item {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 54px;
+}
+
+.heading3 {
+	text-align: center;
+    letter-spacing: 3px;
 }
 
 .block-bg {
@@ -243,12 +297,14 @@ p {
 
 .block-item {
 	width: 509px;
-    padding: 30px 60px 30px 30px;
+    padding: 35px 60px 40px 30px;
 }
 
 .hr {
 	max-width: 390px;
-    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .music-group {
@@ -268,6 +324,7 @@ p {
 
 .btn-content {
 	padding-top: 60px;
+    position: relative;
 }
 
 .button {
@@ -276,6 +333,12 @@ p {
 	font-size: 14px;
     font-weight: bold;
 	padding: 24px 54px 21px 34px;
+}
+
+.iconBtn {
+	position: absolute;
+	left: 80%;
+	bottom: 20%;
 }
 
 .box-icon {
@@ -317,20 +380,7 @@ p {
 	height: 15px;
 }
 
-.video {
-	background: url(img/video.png);
-}
-
-.music-life {
-	background: url(img/videomusic.png);
-}
-
-.chill-nation {
-	background: url(img/videochill.png);
-}
-
 .video, .music-life, .chill-nation {
-	background-repeat: no-repeat;
 	width: 100%;
 	max-width: 600px;
 	height: 420px;
@@ -347,24 +397,25 @@ p {
 	position: relative;
 }
 
-.next-block {
-	background: url(img/nextBlock.png);
-	position: absolute;
-	top: 200px;
+.vocalists {
+    padding-top: 160px;
 }
 
 .next {
+	background: url(img/nextBlock.png);
+	position: absolute;
+	top: 36%;
+}
+
+.next1 {
 	background: url(img/next.png);
-	width: 85px;
-	height: 171px;
+	position: absolute;
+    top: 36%;
+    right: 0;
 }
 
 .block-next {
-
-}
-
-.next-block {
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
 	width: 85px;
 	height: 171px;
 }
@@ -377,17 +428,13 @@ p {
 	margin: 0 auto;
 }
 
-.note {
-	padding-top: 160px;
-}
-
 .text {
-	max-width: 350px;
+	max-width: 420px;
     padding-top: 40px;  
 }
 
 .text2 {
-    max-width: 820px;
+    max-width: 940px;
     padding-top: 11px;
 }
 
@@ -395,6 +442,7 @@ p {
     width: 100%;
     font-size: 17px;
     margin: 0 auto;
+    text-align: center;
     text-transform: uppercase;
     color: #fff;
 }
@@ -413,6 +461,27 @@ p {
     margin: 0 auto;
     text-align: center;
     padding-top: 60px;
+}
+
+.box-disk {
+	display: flex;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.circle {
+	background: url(img/circle.png);
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 11px;
+}
+
+.disk {
+	background: url(img/dick.png);
+	background-repeat: no-repeat;
+	width: 11px;
+	height: 11px;
+	margin-left: 38px;
 }
 
 .block1 .box-music {
@@ -545,13 +614,9 @@ p {
     flex: 50% 0 0;
 }
 
-.heading {
-    font-size: 50px;
-	font-weight: 200;
-	letter-spacing: 3px;
-	color: #5b848f;
-	text-transform: uppercase;
-	text-decoration: line-through;
+.heading4 {
+    color: #42717e;
+    letter-spacing: 2px;
 }
 
 .music-content {
@@ -602,11 +667,66 @@ p {
 	text-align: center;
 }
 
+.heading5 {
+	letter-spacing: 3px;
+    color: #5b5c5a;
+}
+
 .box-text {
     width: 850px;
     letter-spacing: 1px;
     text-align: center;
     margin: 0 auto; 
+}
+
+.trait {
+	width: 150px;
+    border-bottom: 1px solid #798285;
+    margin-bottom: 15px;
+}
+
+.point {
+	background: url(img/point.png);
+	background-repeat: no-repeat;
+	width: 8px;
+	height: 8px;
+}
+
+.box-point {
+	margin: 15px 0 0 15px;
+    cursor: pointer;
+}
+
+.month {
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #798285;
+	padding-left: 15px;
+}
+
+.may {
+	color: #000;
+
+}
+
+.box-month {
+	display: flex;
+	padding-left: 20px;
+}
+
+.months {
+	display: flex;
+	padding-top: 250px;
+}
+
+.text-bg {
+	font-size: 14px;
+	font-weight: 600;
+	width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 49px;
+    color: #5a5a58;
 }
 
 .bg4 {
@@ -617,3 +737,75 @@ p {
 	max-width: 2000px;
 	height: 1105px;
 }
+
+
+.bg5 {
+	background: url(img/bg5.png);
+	background-repeat: no-repeat;
+	background-size: contain; ;
+	max-width: 2000px;
+	height: 862px;
+}
+
+.page-form {
+   display: flex;
+   justify-content: flex-end;
+   max-width: 1100px;
+   margin: 0 auto;
+}
+
+.box-form {
+    flex: 50% 0 0;
+}
+
+.heading6 {
+	letter-spacing: 5px;
+    color: #454545;
+}
+
+.content-form {
+	margin-top: 80px;
+	 
+}
+
+.line-form {
+	width: 380px;
+    border-top: 1px solid #000;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.send {
+	color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.social {
+	border-left: 1px solid #000;
+	height: 190px;
+	margin-left: 100px;
+}
+
+.form-social {
+	display: flex;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.soc-item {
+	margin-top: 33px;
+}
+
+.inst {
+   padding-top: 60px;
+}
+
+.twit {
+   padding-top: 60px;
+}
+
+
