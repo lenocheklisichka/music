@@ -57,7 +57,7 @@ a {
 
 .box-menu {
     width: 100%;
-    max-width: 2000px;
+    max-width: 1536px;
     height: 60px;
     background-color: rgba(0,0,0,0.1);
     position: absolute;
@@ -105,7 +105,7 @@ a {
     background-position: center;
     background-size: cover;
 	width: 100%;
-	max-width: 2000px;
+	max-width: 1536px;
 	height: 1037px;
 	position: relative;
 }
@@ -132,16 +132,16 @@ a {
     position: absolute;
     top: 50%;
     background-color: #000;
-    height: 2px;
+    height: 0.5px;
 } 
 
 .heading1:before {
-    width: 360px;
+    width: 25%;
     right: 38%;  
 }
 
 .heading2:before {
-	width: 450px;
+	width: 30%;
     right: 35%;
 }
 
@@ -203,11 +203,11 @@ a {
 }
 
 .hr-line {
-	width: 500px;
+	max-width: 500px;
 }
 
 .hr-line2 {
-	width: 350px;
+	max-width: 350px;
 }
 
 .music-album {
@@ -388,6 +388,7 @@ a {
 
 .box-item {
      padding-top: 150px;
+     margin: 0 100px;
 }
 
 .btn-content {
@@ -589,8 +590,7 @@ a {
     max-width: 1200px;
     height: 1125px;
     margin: 0 auto;
-    padding-top: 160px;
-    padding-bottom: 140px;
+    padding: 160px 0 140px;
 }
 
 .block {
@@ -790,7 +790,7 @@ a {
 	margin: 20px 20px 0 30px;
 }
 
-.month {
+.month, .number {
 	font-size: 35px;
 	text-transform: uppercase;
 	color: #798285;
@@ -798,10 +798,14 @@ a {
 	overflow: hidden;
 }
 
-.month-may {
+.month-may, .number1 {
 	color: #000;
 	font-size: 35px;
 	text-transform: uppercase;
+}
+
+.number, .number1 {
+	padding-left: 15px;
 }
 
 .box-month {
@@ -909,7 +913,7 @@ ul {
 
 /*MEDIA*/
 
-@media (max-width: 1193px) and (min-width: 1024px)  {
+@media (max-width: 1193px) and (min-width: 768px)  {
 	.menu {
 		display: none;
 	}
@@ -943,7 +947,7 @@ ul {
 	}
 
 	.page-album {
-		width: 65%;
+		width: 70%;
         margin: 0 auto;
 	}
 
@@ -1082,6 +1086,189 @@ ul {
     	margin-top: 200px; 
     }
   
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+    .menu {
+		display: none;
+	}
+
+	.btn-menu {
+		display: block;
+		padding-top: 20px;
+	}
+
+	.heading1:before {
+	    width: 50%;
+	    right: 25%;
+	}
+
+	.box-album, .box-album2 {
+		flex-direction: column;
+	}
+
+	.page-album {
+		width: 65%;
+	}
+
+	.play-content {
+		margin: 0 auto;
+        margin-top: 30px;
+	}
+
+	.album, .album2 {
+		padding: 0 0 40px 0;
+	}
+
+	.play3 {
+		top: 50px;
+		left: 40%;
+	}
+
+	.heading {
+		font-size: 45px;
+	}
+
+	.box-text {
+		width: 71%;
+	}
+
+	.heading2:before {
+	    width: 60%;
+	    right: 20%;
+    }
+
+    .box-content {
+    	max-width: 450px;
+    	margin: 0 auto;
+    }
+
+    .bg2 {
+    	max-width: 767px;
+    	margin-top: 100px;
+    }
+
+    .heading3:before {
+	    width: 80%;
+	    left: 10%;
+	}
+
+	.item, .item2 {
+	 	flex-direction: column;
+	 }
+
+
+
+
+	.block-next {
+	 	background-image: none;
+	}
+
+	 .page {
+	    max-width: 767px;
+	    height: 2900px;
+	}
+
+	.box-block {
+		flex-direction: column;
+		max-width: 380px;
+		height: 2800px;
+		padding: 50px 0;
+	}
+
+	.block {
+		width: 100%;
+		height: 420px;
+		margin: 0 0 30px;
+	}
+
+    .text-music {
+    	line-height: 18px;
+    }
+
+    .block1 .numeral {
+        top: 82%;
+    }
+
+    .block2 .numeral {
+        top: 101%;
+    }
+
+    .block3 .numeral {
+        top: 113%;
+    }
+
+    .block4 .numeral {
+        top: 107%;
+    }
+
+    .block5 .numeral {
+        top: 92%;
+    }
+
+    .block6 .numeral {
+        top: 119%;
+    }
+
+    .heading4 {
+    	letter-spacing: 1px;
+    }
+
+    .heading4:before {
+        width: 95%;
+    }
+
+    .music-composition {
+    	margin: 0 auto;
+    	padding-top: 50px;
+    	flex: 63% 0 0;
+    }
+
+    .composition-text {
+    	font-size: 15px;
+    }
+
+    .months {
+    	overflow: hidden;
+    }
+
+    .trait {
+    	width: 200px;
+    }
+
+    .box-point {
+        margin: 20px 40px 0 20px;
+    }
+
+    .box-point2 {
+	    margin: 20px 20px 0 35px;
+    }
+
+    .heading5:before {
+	    width: 30%;
+	    left: 35%;
+	}
+
+	.text-item4 {
+		width: 74%;
+	}
+
+	.page-form {
+		justify-content: center;
+	}
+
+	.box-form {
+		margin-top: 50px;
+	}
+
+
+
+
+
+
+
+
+
 }
 
 
