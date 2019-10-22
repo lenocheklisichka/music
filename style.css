@@ -5,9 +5,12 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
- 	margin: 0;
- 	padding: 0;
     box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
 p {
@@ -24,7 +27,7 @@ a {
 	text-decoration: none; 
 }
 
- *{ /*border:1px solid red;*/ box-sizing:border-box; }
+ *{ /*border:1px solid red;*/ /*box-sizing:border-box;*/ }
 
 .menu, .item-menu {
 	list-style: none;
@@ -115,7 +118,7 @@ a {
 }
 
  .heading {
-	font-size: 40px;
+	font-size: 45px;
 	font-weight: 200;
 	text-transform: uppercase;
 	position: relative;
@@ -136,31 +139,31 @@ a {
 } 
 
 .heading1:before {
-    width: 25%;
-    right: 38%;  
+    width: 30%;
+    left: 35%;  
 }
 
 .heading2:before {
-	width: 30%;
-    right: 35%;
-}
-
-.heading3:before {
-    width: 36%;
+	width: 35%;
     left: 32%;
 }
 
+.heading3:before {
+    width: 38%;
+    left: 31%;
+}
+
 .heading4:before {
-	width: 420px;
+	width: 95%;
 }
 
 .heading5:before {
-    width: 15%;
-    left: 42%;
+    width: 17%;
+    left: 41%;
 }
 
 .heading6:before {
-    width: 480px;
+    width: 87%;
 }
 
 .page-album {
@@ -176,15 +179,15 @@ a {
 }
 
 .box-album2 {
-	padding-top: 110px;
+	padding-top: 100px;
 }
 
 .album {
-	padding-top: 25px;
+	padding-top: 20px;
 }
 
 .album2 {
-	padding-top: 45px;
+	padding-top: 40px;
 }
 
 .album, .album2 {
@@ -203,7 +206,7 @@ a {
 }
 
 .hr-line {
-	max-width: 500px;
+	width: 500px;
 }
 
 .hr-line2 {
@@ -217,7 +220,7 @@ a {
 
 .group {
 	font-size: 23px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .text-content {
@@ -351,7 +354,7 @@ a {
 
 .heading3 {
 	text-align: center;
-    letter-spacing: 3px;
+    letter-spacing: px;
 }
 
 .block-bg {
@@ -388,7 +391,7 @@ a {
 
 .box-item {
      padding-top: 150px;
-     margin: 0 100px;
+     /*margin: 0 100px;*/
 }
 
 .btn-content {
@@ -588,7 +591,7 @@ a {
     flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
-    height: 1125px;
+    /*height: 1125px;*/
     margin: 0 auto;
     padding: 160px 0 140px;
 }
@@ -633,17 +636,23 @@ a {
 	font-size: 23px;
 	font-weight: 600;
 	color: #000;
+	padding: 45px 0 40px;
 }
 
 .text-music {
 	width: 100%;
 }
+
+.text-music2{
+	padding-top: 20px;
+}
+
 .block .numeral {
     position: absolute;
-	left: 70%;
+	left: 73%;
 }
 .block1 .numeral {
-    top: 87%;	
+    top: 88%;	
 }
 
 .block2 .numeral {
@@ -651,19 +660,19 @@ a {
 }
 
 .block3 .numeral {
-    top: 124%;	
+    top: 125%;	
 }
 
 .block4 .numeral {
-    top: 97%;	
+    top: 110%;	
 }
 
 .block5 .numeral {
-    top: 87%;	
+    top: 89%;	
 }
 
 .block6 .numeral {
-    top: 109%;	
+    top: 132%;	
 }
 
 .bg3 {
@@ -673,6 +682,7 @@ a {
 	width: 100%;
 	max-width: 1536px;
 	height: 1200px;
+	padding-top: 170px;
 }
 
 .page-music {
@@ -683,7 +693,7 @@ a {
 }
 
 .music-composition {
-    padding-top: 180px;
+    padding-top: 120px;
     flex: 50% 0 0;
 }
 
@@ -705,6 +715,7 @@ a {
 	font-size: 14px;
 	width: 270px;
     line-height: 25px;
+    padding-top: 15px;
 }
 
 .vertical {
@@ -728,6 +739,7 @@ a {
 .composition-text {
     width: 100%;
     max-width: 500px;
+    padding-top: 20px;
 }
 
 .horizontal {
@@ -794,18 +806,18 @@ a {
 	font-size: 35px;
 	text-transform: uppercase;
 	color: #798285;
-	padding: 0 20px;
+	padding: 0 15px;
 	overflow: hidden;
 }
 
 .month-may, .number1 {
 	color: #000;
-	font-size: 35px;
+	font-size: 30px;
 	text-transform: uppercase;
 }
 
 .number, .number1 {
-	padding-left: 15px;
+	padding-left: 10px;
 }
 
 .box-month {
@@ -818,6 +830,7 @@ a {
 	width: 100%;
 	max-width: 1800px;
 	padding-top: 220px;
+	overflow: hidden;
 }
 
 .text-bg {
@@ -866,6 +879,11 @@ a {
     color: #454545;
 }
 
+.text-form {
+	font-size: 14px;
+	padding-top: 30px; 
+}
+
 .content-form {
 	margin-top: 80px; 
 }
@@ -899,7 +917,7 @@ ul {
 }
 
 .soc-item {
-	margin-top: 33px;
+	margin-left: 30px;
 }
 
 .inst {
@@ -934,7 +952,8 @@ ul {
 	}
 
 	.heading1:before {
-	    left: 32%;
+		width: 50%;
+	    left: 25%;
     }
 
 	.text-item1 {
@@ -944,6 +963,10 @@ ul {
 
 	.text-item2 {
 		width: 78%;
+	}
+
+	.text-item4 {
+		width: 90%;
 	}
 
 	.page-album {
@@ -984,12 +1007,14 @@ ul {
 	}
 
 	.heading2:before {
-	    left: 28%;
+		width: 60%;
+	    left: 20%;
     }
 
 	.heading3:before {
-		width: 54%;
-        left: 23%;
+		width: 75%;
+        left: 12%;
+        top: 45%;
 	}
 
 	.box-content {
@@ -998,23 +1023,35 @@ ul {
 	    margin: 0 100px;
     }
 
+    .text-content {
+    	width: 80%;
+    }
+
     .content {
         margin-top: 120px;
     }
 
 	.item, .item2 {
 		flex-direction: column;
-		width: 55%;
+		width: 75%;
 		margin: 0 auto;
 		margin-bottom: 50px;
+	}
+
+	.music-group {
+		width: 85%;
 	}
 
 	.block-next {
 		background: none;
 	}
+
+	.text2 {
+		width: 90%;
+	}
 	 
 	.block {
-		width: 40%;
+		width: 45%;
 	}
 
 	.box-block {
@@ -1031,12 +1068,20 @@ ul {
 	}  
 
 	.block3 .numeral {
-        top: 91%;
+        top: 93%;
     }
 
     .block4 .numeral {
-        top: 86%;
+        top: 88%;
     } 
+
+    .block5 .numeral {
+    	top: 90%;
+    }
+
+    .block6 .numeral {
+    	top: 136%;
+    }
 
     .bg3 {
     	background-image: url(img/bg3.png);
@@ -1053,7 +1098,7 @@ ul {
     } 
 
     .music-composition {
-    	flex: 65% 0 0;
+    	flex: 75% 0 0;
     	padding-top: 0;
     }
 
@@ -1068,15 +1113,13 @@ ul {
 	}
 
 	.months {
-		overflow: hidden;
 		text-align: center;
 	}
 
 	.heading5:before {
-		width: 25%;
-	    left: 37%; 
+		width: 35%;
+	    left: 32%; 
     }
-
 
     .box-form {
     	margin: 0 100px;
@@ -1088,7 +1131,7 @@ ul {
   
 }
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) {
     .menu {
 		display: none;
 	}
@@ -1099,8 +1142,8 @@ ul {
 	}
 
 	.heading1:before {
-	    width: 50%;
-	    right: 25%;
+	    width: 45%;
+	    left: 27%;
 	}
 
 	.box-album, .box-album2 {
@@ -1126,7 +1169,7 @@ ul {
 	}
 
 	.heading {
-		font-size: 45px;
+		font-size: 35px;
 	}
 
 	.box-text {
@@ -1134,8 +1177,8 @@ ul {
 	}
 
 	.heading2:before {
-	    width: 60%;
-	    right: 20%;
+	    width: 50%;
+	    left: 25%;
     }
 
     .box-content {
@@ -1148,20 +1191,47 @@ ul {
     	margin-top: 100px;
     }
 
+    .box-item {
+    	width: 70%;
+    	margin: 0 auto;
+    }
+
+    .music-group {
+    	width: 86%;
+    }
+
+    .text-video {
+    	width: 85%;
+    	padding-top: 40px;
+    }
+
+    .button {
+    	padding: 20px 34px 20px 32px;
+    }
+
+    .iconBtn {
+    	left: 85%;
+    }
+
+    .icon {
+    	font-size: 15px;
+    }
+
     .heading3:before {
-	    width: 80%;
-	    left: 10%;
+	    width: 60%;
+	    left: 20%;
 	}
 
 	.item, .item2 {
 	 	flex-direction: column;
 	 }
 
-
-
-
 	.block-next {
 	 	background-image: none;
+	}
+
+	.text3, .text2 {
+		width: 90%;
 	}
 
 	 .page {
@@ -1169,10 +1239,14 @@ ul {
 	    height: 2900px;
 	}
 
+	.heading3 {
+		font-size: 35px;
+		letter-spacing: 0.5px;
+	}
+
 	.box-block {
 		flex-direction: column;
 		max-width: 380px;
-		height: 2800px;
 		padding: 50px 0;
 	}
 
@@ -1191,26 +1265,27 @@ ul {
     }
 
     .block2 .numeral {
-        top: 101%;
+        top: 95%;
     }
 
     .block3 .numeral {
-        top: 113%;
+        top: 112%;
     }
 
     .block4 .numeral {
-        top: 107%;
+        top: 101%;
     }
 
     .block5 .numeral {
-        top: 92%;
+        top: 82%;
     }
 
     .block6 .numeral {
-        top: 119%;
+        top: 111%;
     }
 
     .heading4 {
+    	font-size: 32px;
     	letter-spacing: 1px;
     }
 
@@ -1220,8 +1295,8 @@ ul {
 
     .music-composition {
     	margin: 0 auto;
-    	padding-top: 50px;
-    	flex: 63% 0 0;
+    	padding-top: 0;
+    	flex: 50% 0 0;
     }
 
     .composition-text {
@@ -1258,7 +1333,9 @@ ul {
 	}
 
 	.box-form {
-		margin-top: 50px;
+		width: 100%;
+		margin-top: 100px;
+		overflow: hidden;
 	}
 
 
